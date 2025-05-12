@@ -1,0 +1,14 @@
+-Array is having fixed size, once we declare we cant change(increaseor decrease).
+-To increase array size dynamically we have to use ArrayList and it belongs to Collection framework
+-- What is a frameWork?
+      -- Frameworks are predefined methods and will guide the program
+-- Syntax for ARRAYLIST:- List <Wraper class> ArrayListName = new ArrayList<>();
+                    eg:- List <Integer> array = new ArrayList<>();
+-- list is an interface, interface contains incomplete methods
+-- Wrapper Class is not a primitive datatype its a class 
+-- in collections we have to use wrapper class only.
+-- <> are called generics
+-- ArrayList<> is a class and it contains complete methods
+-- in ArrayList - dynamic nature(if my arraysize is 2 , and if i try to add 3rd element , the size will be doubled, and it will copy previous elements and viceversa the array will become half if we delete an element)
+eg -- [1,2] add(3)--> [1,2,3,_] , delete(3)--> [1,2]
+-- As arraylist is a class we have to import Arraylist class ,so that we can access all the predefined methods which consists in arraylist.
