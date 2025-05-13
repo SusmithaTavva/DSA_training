@@ -1,0 +1,40 @@
+Def:
+    A function calling itself until it meets base condition
+--two types:1> function calling same function itself
+            2> function calling another function until it meets base condition
+-- recursion is used to break the code
+-- for every recursive call elements will be pushed into a stack
+-- after reaching base condition elements will be popped
+
+Eg1: Recursion
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+      int n = sc.nextInt();
+      System.out.println(fact(n));
+      }
+      public static int fact(int n){
+        for(int i = 0;i<= n ;i++){
+          if(n == 0 || n ==1){
+            return 1;
+          }
+        }
+        return n * fact(n-1);
+      }
+}
+
+2>> Fibonacci
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int n =  sc.nextInt();
+    System.out.println(fib(n));
+  }
+  public static int fib(int n ){
+    if(n == 0 || n==1){
+      return n;
+    }
+    return fib(n-1) + fib(n-2);
+  }
