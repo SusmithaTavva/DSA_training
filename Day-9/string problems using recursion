@@ -1,0 +1,78 @@
+Recursion problem::-
+Q>>from a given string remove a character using recursions.
+-- Assume that we are starting with two strings i/p and o/p. Initially the o/p string is empty, we have few steps they are:
+- take the first character from the string and store in a character variable
+- check the variable to our target character, if it matches return o/p string else append the character to the o/p string
+- slice the string by one character
+- to get particular char from the string use charAt() and if we want to slice use substring()
+i/p                o/p
+"Hello"            ""
+"ello"             "H"
+"llo"              "H"
+"lo"               "hl"
+"o"               "Hll"
+""                 "Hllo"
+- whenever i/p string becomes empty stop the recursion(base case)
+import java.util.*;
+public class Main {
+static String skip(String str){
+  if(str.isEmpty()){
+    return "";
+  }
+  char ch = str.charAt(0);
+  if(ch == 'e'){
+    return skip(str.substring(1));
+  }else{
+    return ch + skip(str.substring(1));
+  }
+}
+
+    public static void main(String[] args) {
+      String str = "hello";
+      System.out.println(skip(str));
+
+  }
+}
+Q2>>From a given string skip entire word and print remaining word.
+import java.util.*;
+public class Main {
+static String skip(String str){
+  if(str.isEmpty()){
+    return "";
+  }
+  char ch = str.charAt(0);
+  if(str.startsWith("Hello")){
+    return skip(str.substring(5));
+  }else{
+    return ch + skip(str.substring(1));
+  }
+}
+
+    public static void main(String[] args) {
+      String str = "aaabHellolala";
+      System.out.println(skip(str));
+
+  }
+}
+
+Q3>> From the given string you have to skip 'HE' no 'HELLO"  
+public class RemoveHEUnlessHELLO {
+    public static String removeHEUnlessHELLO(String str) {
+        if (str.length() < 2) {
+            return str;
+        }
+        if (str.startsWith("HELLO")) {
+            return "HELLO" + removeHEUnlessHELLO(str.substring(5));
+        }
+        if (str.startsWith("HE")) {
+            return removeHEUnlessHELLO(str.substring(2));
+        }
+        return str.charAt(0) + removeHEUnlessHELLO(str.substring(1));
+    }
+    public static void main(String[] args) {
+        String input = "HELLOHEHEWORLDHE";
+        String result = removeHEUnlessHELLO(input);
+        System.out.println("Original: " + input);
+        System.out.println("After processing: " + result);
+        }
+}
