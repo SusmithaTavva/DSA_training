@@ -1,0 +1,25 @@
+1.Initialize the pointers according to the question
+2.if you are starting first pointer at first index and secong pointer at last index, whenever both pointers crosses each other..break the loop
+
+Q1>> Reverse an array:
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        rev(arr);  // Reverse in-place
+        System.out.println(Arrays.toString(arr));  // Print the reversed array
+    }
+
+    public static void rev(int[] arr) {
+        int i = 0;
+        int j = arr.length - 1;
+        while (i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+}
