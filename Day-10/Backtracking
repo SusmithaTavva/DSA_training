@@ -1,0 +1,2 @@
+-> in recursions we have only two possibilities(if or else) and in backtracking we have multiple possibilities 
+-> most of the problems whenever we reaches base case we have to print all the base case elements
