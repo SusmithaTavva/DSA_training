@@ -1,0 +1,46 @@
+Strings:--
+-> Strings are classes and Arrays are objects.
+-> The sequence of characters that ends with null character are called Strings.
+->Strings are immutable.
+->All the array objects are created in heap memory but strings are created in heap memory in String pool.
+->Strings are fixed,we cant modify the string.
+-> == is used to compare the address
+-> equals() method is used to compare data, not address so, in below codes if we use this method it will return true in both the cases.
+-> to get length of the string use s.length().
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String a = new String("j");
+      String b = new String("j");
+      System.out.println(a==b);
+  }
+}
+//output:false -- as they are creating new objects for both of them sepeartely , so they are not equal.
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String a = "j";
+      String b = "j";
+      System.out.println(a==b);
+  }
+}
+
+//output:true -- as they are not creating new objects for both of them sepeartely , so they are  qual.
+
+-> Different methods in Strings--
+- length() - Returns the length of the string.
+- charAt(int index) - Returns the character at the specified index.
+- substring(int beginIndex, int endIndex) - Extracts a portion of the string.
+- contains(CharSequence s) - Checks if the string contains the specified sequence.
+- startsWith(String prefix) / endsWith(String suffix) - Checks if the string starts/ends with a given substring.
+- toUpperCase() / toLowerCase() - Converts the string to uppercase or lowercase.
+- trim() - Removes leading and trailing spaces.
+- replace(String old, String new) - Replaces occurrences of a substring.
+- split(String regex) - Splits the string into an array based on a regex.
+- equals(String anotherString) / equalsIgnoreCase(String anotherString) - Compares two strings.
