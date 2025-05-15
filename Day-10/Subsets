@@ -1,0 +1,3 @@
+def: 
+-> for a given array we have to print possible arrays,it should be in a sequence but not continuous
+-> in an array ,if we have n no.of elements we will get 2^n subsets
