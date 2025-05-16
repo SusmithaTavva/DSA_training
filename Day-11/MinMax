@@ -1,0 +1,3 @@
+use Inbuilt methods like :>>
+Math.min(int a, int b) --- to get the minimum value in two integers
+Math.max(int a, int b) ---- to get maximum value in two integers
