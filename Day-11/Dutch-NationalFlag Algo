@@ -1,0 +1,35 @@
+Dutch National Flag:
+-> Initialize three pointers l = 0(index), m = 0 , h = n-1
+-> the elements btw m and h are not sorted
+-> if arr[m] == 0 then swap(arr[m] , arr[l]) and m++, l++
+-> if arr[m] == 1 then swap(arr[m] , arr[k]) and m++, k--
+-> else m ++
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,0,2,0,1,2,1,0,0,1};
+      int i = 0;
+      int j = 0;
+      int k = arr.length-1;
+      while(j<=k){
+            if(arr[j] == 1){
+              j++;
+            }else if(arr[j] == 0){
+              int temp = arr[i];
+              arr[i] = arr[j];
+              arr[j] = temp;
+              j++;
+              i++;
+            }else {
+              int t = arr[j];
+              arr[j] = arr[k];
+              arr[k] = t;
+                k--;
+              }
+      }
+      System.out.println(Arrays.toString(arr));
+      
+  }
+}
