@@ -1,0 +1,12 @@
+                                                          COLLECTION FRAMEWORK
+                                                                    |
+                                            LIST-                      SET                         MAP
+                                    Array List                    Hash Set                       Hash Map
+                                    LinkedList                    LinkedHashSet                  LinkedHash map
+                                    Vector                        Tree set                       Tree Map
+ 
+-> list, sets, and maps are interfaces remaining all terms are called classes
+-> interface conatins incomplete methods, class contains complete methods
+> List is ordered and allows duplicates
+-> Set is unordered , and it wont accept duplicates
+-> Maps contains Key value pairs
