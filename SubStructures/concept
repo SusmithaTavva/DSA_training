@@ -1,0 +1,24 @@
+p - possible , np - not possible
+arr = [1,2,3]
+
+SUBARRAY                                        SUBSET
+  [1,2]  p                                    [1,2]   p
+  [1,3]  p                                    [1,3]  np
+  [2,1]  np                                   [2,3]  p
+  [2,3]  p                                    [3,2]  np
+
+
+str = "abc"
+
+SUBSEQUENCE                                 SUBSTRING
+  ab  p                                      ab  p
+  bc  p                                      bc  p
+  ac  p                                      ac  np
+  ca  np                                     ca  np
+
+
+ 
+ 
+ 
+  
+ 
