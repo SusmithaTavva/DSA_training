@@ -1,0 +1,16 @@
+to search the element in an array, whenever the length of the array is less then we use this search
+time complexity in worst case is O(n)
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr = {1,2,3,4,5};
+      int target = 4;
+      for(int i = 0; i< arr.length; i++){
+        if(arr[i] == target){
+           System.out.println(i);
+        }
+      }
+  }
+}
