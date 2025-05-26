@@ -1,0 +1,18 @@
+Time Complexity conditions-->
+  -> Ignore smaller
+  -> Focus on Worst case
+  -> Ignore Constants
+to solve a problem we have 3 steps:
+  1> write a code which contains 2 for loops
+  2> run one more for loop
+  3> write the code in constant time.
+    if we analyze the code the time complexity will be n^2 for step1, n for step2, and 1 for step3
+To get the time complexity for the code follow the conditions , so for the above steps the time complexity will be O(n^2).
+
+
+BEST CASE                                    WORST CASE                             AVERAGE CASE
+less time                                    more time                              average of best and worst
+
+
+SPACE COMPLEXITY:
+if we use extra space for solving the problem that extra space will be considered as space complexity.
