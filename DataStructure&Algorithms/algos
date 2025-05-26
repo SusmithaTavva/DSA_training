@@ -1,4 +1,4 @@
-DataStructures:
+-->DataStructures:
   Linked List
   Stack
   Queue
@@ -6,7 +6,7 @@ DataStructures:
   Graphs
 
 
-  Algorithms:
+  -->Algorithms:
   Sorting
   Searching
   Greedy
@@ -14,3 +14,15 @@ DataStructures:
   Kruskal
   Prims
   Dijkstra's
+
+-->Linear datastructure                                Non-linear datastructure
+Linkedlist                                           Trees
+stack                                                graphs
+Queue
+
+-->linkedlist:
+    Collection of similar type of data in random allocation memory
+Types: Single linked list
+       Double linked list
+       Circular linked list(starting and ending point are same)
+Advantage: faster insertions and deletions
