@@ -1,0 +1,31 @@
+TREES-->
+  Trees are acyclic graphs(doesnt have cycles)
+-starting node -- Root Node 
+    eventually every node is a root node
+    whatever nodes that are added to root node are called child nodes
+-Leaf Nodes  to travel from root node to last nodes we have 
+    two ways of traversals: DFS
+                              i) Inorder - left, root, right
+                              ii) PreOrder - root, left, right
+                              iii) PostOrder- left, right, root
+                            BFS
+                              i) LevelOrder
+
+TREE CREATION-->
+1) create a node which contains data as well as left and right pointer.
+
+TYPES OF TREES-->
+N-Array Tree( ex:Tries) - N nodes can be attached to a root node
+Binary Tree - at most two child nodes can be added to the root node
+ Ex: 1) binary search tree
+      2) AVL tree & Red-Black tree
+      3)Segment tree
+
+height -- longest path of the tree
+diameter --( height of left tree + height of right tree) + 1
+
+*Perfect Binary Tree : every node should contain two child nodes , and every level should be filled
+*Full Binary Tree: every node can have either 0 or 2 children , and every level should be filled.
+*Complete Binary Tree: every level should be filled , and nodes should start left to right.
+
+
