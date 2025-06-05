@@ -1,0 +1,10 @@
+Heap data structure will store the data in arrays. It will be stored by trees and the values will be arranged(ascending or descending) by trees
+
+with the help of complete binary tree the elements will be arranged accordingly
+
+with the help of priority queues heaps got created
+
+as the data is stored in an array we can access the values by index values
+
+bottom to top approach
+top to bottom approach
